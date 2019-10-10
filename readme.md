@@ -1,11 +1,11 @@
 # [todo tasks](https://github.com/flavien-hugs/django-ecommerce/)&nbsp;
 
-[![alt text](https://github.com/flavien-hugs/todo/blob/master/screenshot.png "logo")]
+[(https://github.com/flavien-hugs/todo/blob/master/screenshot.png "logo")]
 
 ![[todo tasks](https://github.com/flavien-hugs/django-ecommerce/)](https://imggit.shields.io/badge/unsta-live--demo-orange.svg?style=flat)
 ![The MIT License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)
 
-[todo tasks](https://github.com/flavien-hugs/django-ecommerce/) un mini projet de gestion des tâches d'une entreprise et/ou du travail à faire. Ce projet est une reprise de django-story.
+[todo tasks](https://github.com/flavien-hugs/todo/) un mini projet de gestion des tâches d'une entreprise et/ou du travail à faire. Ce projet est une reprise de django-story.
 
 ### Fonctionalité et prise en main
 La plateforme fournit les fonctionnalité comme :
