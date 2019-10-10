@@ -12,6 +12,7 @@ La plateforme fournit les fonctionnalité comme :
 
     - gestion des tâches à faire
     - suppression et ajout de tâches
+    - téléchargement de toutes les tâches
 
 Installation et exécution du projet
 -----------------------------------
