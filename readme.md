@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/flavien-hugs/todo/blob/master/screenshot.png "screenshot")
 
-![[todo tasks](https://github.com/flavien-hugs/todo/)](https://imggit.shields.io/badge/unsta-live--demo-orange.svg?style=flat)
+![[todo](https://github.com/flavien-hugs/todo/)](https://img.shields.io/badge/unsta-live--demo-orange.svg?style=flat)
 ![The MIT License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)
 
 [todo tasks](https://github.com/flavien-hugs/todo/) un mini projet de gestion des tâches d'une entreprise et/ou du travail à faire. Ce projet est une reprise de django-story.
