@@ -1,0 +1,68 @@
+{% load i18n staticfiles %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% trans "Tasks list" %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static "tasks/vendor/css/tasks.min.css" %}">
+    </head>
+
+
+    <body>
+        <section id="todoapp">
+            <header id="header">
+                <h1>{% trans "Todo tasks" %}</h1>
+                <form action="{% url "tasks:task-create" %}" method="post">
+                    {% csrf_token %}
+                    <input id="new-todo" placeholder="{% trans "What needs to be done ?" %}" name="content" autofocus>
+                </form>
+
+            </header><!-- ./ end header -->
+
+            <section id="main">
+                <form action="{% url 'tasks:tasks-toggle' %}" method="post">
+                    {% csrf_token %}
+                    <input id="toggle-all" type="checkbox" onclick="this.parentNode.submit();"></input>
+                </form>
+                <label for="toggle-all"> {% trans "Mark all as complete" %}</label>
+
+                <ul id="todo-list">
+                    <!-- all tasks liste -->
+                    {% for task in object_list %}
+                        <li{% if task.is_resolved %} class="completed"{% endif %}>
+                            <div class="view">
+                                <form method="post" action="{% url "tasks:task-toggle" task.id %}" >
+                                    {% csrf_token %}
+                                   <input class="toggle" type="checkbox"{% if task.is_resolved %} checked="checked"{% endif %} onclick="this.parentNode.submit();">
+                                </form>
+
+                                <label>{{ task.content }}</label>
+
+                                <form method="post" action="{% url "tasks:task-delete" task.id  %}" >
+                                    {% csrf_token %}
+                                    <button class="destroy" onclick="this.parentNode.submit();"></button>
+                                </form>
+                            </div>
+                            <input class="edit" value="{{ task.content }}"></input>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section><!-- ./ end main -->
+
+            <footer id="footer">
+                <form action="{% url "tasks:tasks-clear" %}" method="post">
+                    {% csrf_token %}
+                    <button id="clear-complete" onclick="this.parentNode.submit();">{% trans "Clear completed" %}</button>
+                </form>
+            </footer><!-- ./ end footer -->
+        </section><!-- ./ end section -->
+
+        <footer id="info">
+            <form action="{% url "tasks:task-download" %}" method="get">
+                {% csrf_token %}
+                <input type="submit" name="download-file" value="{% trans "Download this file PDF" %}">
+            </form>
+        </footer><!-- ./ end footer -->
+
+    </body>
+</html>
