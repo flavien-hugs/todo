@@ -1,4 +1,4 @@
-# [todo tasks](https://github.com/flavien-hugs/django-ecommerce/)&nbsp;
+# [todo tasks](https://github.com/flavien-hugs/todo/)&nbsp;
 
 ![alt text](https://github.com/flavien-hugs/todo/blob/master/screenshot.png "screenshot")
 
@@ -27,7 +27,7 @@ Installation et exécution du projet
 ### 1. Installation
 Exécutez les commandes suivantes :
 
-    - git clone https://github.com/flavien-hugs/django-ecommerce/
+    - git clone https://github.com/flavien-hugs/todo/
     - cd todo
     - source venv/bin/activate ou . ven/bin/activate
     - python manage.py makemigrations ou ./manage.py makemigrations
