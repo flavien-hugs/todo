@@ -1,6 +1,6 @@
 # [todo tasks](https://github.com/flavien-hugs/django-ecommerce/)&nbsp;
 
-[(https://github.com/flavien-hugs/todo/blob/master/screenshot.png "logo")]
+[alt text](https://github.com/flavien-hugs/todo/blob/master/screenshot.png "screenshot")
 
 ![[todo tasks](https://github.com/flavien-hugs/django-ecommerce/)](https://imggit.shields.io/badge/unsta-live--demo-orange.svg?style=flat)
 ![The MIT License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)
